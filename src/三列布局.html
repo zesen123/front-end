@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>两列固定,中间变化</title>
+    <style>
+        .content:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .aside{
+                width: 100px;
+                height: 300px;
+                float: left;
+            background-color: lightblue;
+            }
+        .aside2{
+            width: 100px;
+            height: 400px;
+            float: right;
+            background-color: lightgray;
+        }
+        .main{
+            height: 200px;
+            margin: 0 110px 0 110px;
+            background-color: antiquewhite;
+        }
+        .footer{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="aside">aside</div>
+    <div class="aside2">aside2</div>
+    <div class="main">main</div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>
